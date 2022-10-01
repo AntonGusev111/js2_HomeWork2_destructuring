@@ -1,13 +1,9 @@
-export default function specialAttack(obj){
-    let returnArray = [];
+ function specialAttack(obj,id){
     for (let item in obj.special){
-        if(!obj.special[item]['description']){
-            obj.special[item]['description'] = 'Описание недоступно';
-        }
-        returnArray.push(obj.special[item])
+      if (obj.special[item].id == id){
+        return  [id = 0, name = 'name', icon = 'icon', description = 'Описание недоступно'] = [obj.special[item].id, obj.special[item].name, obj.special[item].icon, obj.special[item].description]
+      }
     }
-    return returnArray
-
 }
 
 const character = {
@@ -28,13 +24,15 @@ const character = {
         id: 9,
         name: 'Нокаутирующий удар',
         icon: 'http://...',
-        description:'',
+        
       }
     ]	
   }
 
-//const result = specialAttack(character)
+let result = specialAttack(character,8);
 
-//for (let i in result){
-  //  console.log(result[i])
-//}
+for (let i in result){
+    console.log(result[i])
+}
+
+//export default
