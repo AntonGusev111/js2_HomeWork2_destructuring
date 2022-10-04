@@ -1,7 +1,7 @@
  function specialAttack(obj,id){
     for (let item in obj.special){
       if (obj.special[item].id == id){
-        return  [id = 0, name = 'name', icon = 'icon', description = 'Описание недоступно'] = [obj.special[item].id, obj.special[item].name, obj.special[item].icon, obj.special[item].description]
+        return {id="0", name="Двойной выстрел", icon='http://...', description= 'Двойной'} = obj.special[item]
       }
     }
 }
@@ -24,15 +24,17 @@ const character = {
         id: 9,
         name: 'Нокаутирующий удар',
         icon: 'http://...',
-        
       }
     ]	
   }
 
-let result = specialAttack(character,8);
+console.log(specialAttack(character,9));
 
-for (let i in result){
-    console.log(result[i])
-}
 
-//export default
+
+//export default {
+//          id=0, 
+  //        name='name', 
+    //      icon='http', 
+      //    description='description',
+       // }
