@@ -24,11 +24,9 @@ test('should sum', () => {
           }
         ]	
       }
-    const toBe = [
-        {id: 8, name: 'Двойной выстрел', icon: 'http://...', description: 'Двойной выстрел наносит двойной урон'},
-        {id: 9, name: 'Нокаутирующий удар', icon: 'http://...', description: 'Описание недоступно'},
-    ]
-    const result = specialAttack(character);
+    const toBe = {id: 9, name: 'Нокаутирующий удар', icon: 'http://...', description: 'Описание недоступно'};
+    
+    const result = specialAttack(character,9);
   
     expect(result).toBe(toBe);
   });

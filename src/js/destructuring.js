@@ -1,9 +1,16 @@
- function specialAttack(obj,id){
+export default function specialAttack(obj,id){
     for (let item in obj.special){
       if (obj.special[item].id == id){
-        return {id="0", name="Двойной выстрел", icon='http://...', description= 'Двойной'} = obj.special[item]
+        const {id="0", name="Двойной выстрел", icon='http://...', description= 'Описание недоступно'} = obj.special[item]
+        return {
+          id,
+          name,
+          icon,
+          description
+        }
       }
     }
+    
 }
 
 const character = {
@@ -28,13 +35,6 @@ const character = {
     ]	
   }
 
-console.log(specialAttack(character,9));
+//console.log(specialAttack(character,9));
 
 
-
-//export default {
-//          id=0, 
-  //        name='name', 
-    //      icon='http', 
-      //    description='description',
-       // }
