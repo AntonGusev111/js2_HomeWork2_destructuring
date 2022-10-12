@@ -24,7 +24,7 @@ test('should sum', () => {
           }
         ]	
       }
-    const toBe = {id: 9, name: 'Нокаутирующий удар', icon: 'http://...', description: 'Описание недоступно'};
+    const toBe = [{id: 9, name: 'Нокаутирующий удар', icon: 'http://...', description: 'Описание недоступно'}];
     
     const result = specialAttack(character,9);
   
